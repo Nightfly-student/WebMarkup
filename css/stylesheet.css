@@ -1,0 +1,612 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+html {
+    font-family: "helvetica neue", sans-serif;
+}
+ul {
+    margin: 0;
+}
+a > span {
+    color: #01452c;
+    font-weight: bold;
+}
+a span:hover {
+    color: #03925e;
+}
+a + footer {
+    letter-spacing: 4px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#webHeader img {
+    width: auto;
+    height: 100px;
+    vertical-align: middle;
+
+
+}
+#webHeader  {
+    height: 200px;
+    position: relative;
+    text-align: center;
+    line-height: 10px;
+    width: 100%;
+}
+.nav {
+    border-bottom: 1px double #EAEAEB;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+
+}
+.menu {
+    margin: 0 30px 0 0;
+
+}
+.menu ul {
+    font-size: 20px;
+    list-style-type: none;
+
+}
+.menu li {
+    float: left;
+    width: 20%;
+}
+.menu a {
+    clear: left;
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px;
+
+}
+.menu a:hover {
+    color: #03925e;
+}
+label {
+    margin: -150px 20px 0 0px;
+    right: 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+    position: relative;
+}
+#toggle {
+    display: none;
+
+}
+#videoPLayer {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+.video {
+    width: 100%;
+    max-width: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.sectionNormal {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    float: left;
+}
+#articleSection {
+    display: flex;
+    flex-wrap: wrap;
+}
+.articleOne {
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+section article p:first-letter{
+    font-size: 2rem;
+    color: #03925e;
+}
+section article p, section aside h2, section aside p {
+    width: 60%;
+    padding-top: 10px;
+    padding-left: 20px;
+    word-spacing: 2px;
+    text-indent: 2px;
+}
+section article h2  {
+    padding-left: 20px;
+    letter-spacing: 2px;
+
+}
+section article a {
+    text-decoration: none;
+    color: #03925e;
+}
+section article a:hover {
+    color: #01452c;
+    font-weight: bold;
+}
+section article a:active {
+    color: #FFAA00;
+    font-weight: bold;
+}
+.articleTwo {
+    flex-grow: 0;
+    flex-basis: 100%;
+}
+
+.articleThree {
+    flex-grow: 0;
+    flex-basis: 100%;
+}
+.articleFour {
+    width: 30%;
+    float: left;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.imageArticle {
+    float: right;
+    height: 150px;
+    width: 250px;
+    flex-wrap: wrap;
+    padding-right: 30px;
+    margin-top: -150px;
+}
+section .figure {
+    float: right;
+}
+#foot {
+    border-top: 1px solid black;
+    height: 50px;
+}
+footer #footer {
+    padding-left: 15px;
+    color: black;
+}
+footer #footer a {
+    text-decoration: none;
+    color: black;
+}
+footer #footer a:hover {
+    color: #01452c;
+    font-weight: bold;
+}
+footer #cookies {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 50%;
+    z-index: 9999;
+    background-color: #FA0;
+}
+/* table */
+table.tableizer-table {
+    font-size: 1em;
+    border: 1px solid #CCC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tableizer-table td {
+    padding: 4px;
+    margin: 3px;
+    border: 1px solid #CCC;
+}
+.tableizer-table th {
+    background-color: #104E8B;
+    color: #FFF;
+    font-weight: bold;
+}
+.tableizer-table td:nth-child(even) {
+    background-color: #CFF;
+}
+.tableizer-table td:nth-child(odd) {
+    background-color: #FFF;
+}
+.tableizer-table td:first-child {
+    background-color: #FF0;
+}
+
+.tableEU {
+    padding-left: 15px;
+    width: 75%;
+}
+.articleEU {
+    text-align: center;
+    padding-right: 25px;
+    border-style: double;
+    border-width: 10px;
+}
+.articleEU p {
+    width: 100%;
+    max-width: 100%;
+
+}
+.asideEUh {
+    text-align: center;
+}
+.asideEU aside {
+    padding-bottom: 40px;
+}
+
+footer #cookies p, footer #cookies a {
+    color: #fff;
+    text-decoration: none;
+}
+/*HowToSolar.Html Articles */
+.sectionArticle {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas:"Two One Three"
+                        "Two One Three"
+                        "Five One Three"
+                        "Five One Four"
+                        "Five One Four"
+                        "Five One Four"
+                        "Five Six Six";
+    grid-gap: 10px;
+
+}
+.articleOneSolar {
+    grid-area: One;
+    background-color: #909090;
+}
+.articleTwoSolar {
+    grid-area: Two;
+}
+.articleThreeSolar {
+    grid-area: Three;
+
+}
+.articleFourSolar {
+    grid-area: Four;
+}
+.articleFiveSolar {
+    grid-area: Five;
+    background-color: #707070;
+}
+.articleSixSolar {
+    grid-area: Six;
+    background-color: #EAEAEB;
+}
+.asideArticles {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-area: unset!important;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.articleAsideOne {
+    grid-column: 1;
+    grid-row: 1;
+}
+.articleAsideTwo {
+    grid-column: 2;
+    grid-row: 1;
+}
+.articleAsideThree {
+    grid-column: 3;
+    grid-row: 1;
+}
+.imageAside {
+    height: 200px;
+    width: 200px;
+
+}
+.figureaside {
+    text-align: center;
+}
+.figureaside figcaption {
+    font-weight: bold;
+}
+/* Contact Form */
+input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: #FA0;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: darkorange;
+}
+.contactForm {
+    border-radius: 5px;
+    padding: 20px;
+    width: 70%;
+}
+.contactInfo {
+    width: 100%;
+    text-align: center;
+}
+.contactInfo p {
+    text-align: center;
+    width: unset;
+    font-family: 'Notable', sans-serif;
+    font-size: 1.2rem;
+}
+.contactLabel {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1180px) {
+    .imageArticle {
+        float: left;
+        margin-top: 0px;
+        height: 100px;
+        width: 150px;
+    }
+    section .figure {
+        float: left;
+        width: 30%;
+    }
+    section article p {
+        float: right;
+        max-width: 40%;
+    }
+    .articleFour {
+        order: 0;
+        width: 100%;
+        padding-left: 100px;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    .video {
+        order: 1;
+    }
+    .sectionNormal {
+        order: 2;
+        padding-left: 100px;
+    }
+    .articleThree {
+        order: 0;
+    }
+    .articleTwo {
+        order: 1;
+    }
+    .articleOne {
+        order: 2;
+    }
+    .menu li {
+        float: left;
+        width: auto;
+        font-size: 15px;
+        padding-left: 10px;
+
+    }
+    .sectionArticle {
+        grid-template-columns: auto auto;
+
+        grid-template-areas:
+        "One Two"
+        "One Two"
+        "Three Two"
+        "Three Five"
+        "Three Five"
+        "Three Five"
+        "Six Six"
+        "Six Six";
+    }
+    .articleFourSolar {
+        display: none;
+    }
+    section .sectionArticle p {
+        max-width: 100%;
+        width: 90%;
+        float: unset;
+        margin: 0;
+        padding: 0 0 0 20px;
+    }
+    .articleAsideOne {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .articleAsideTwo {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .articleAsideThree {
+        display: none;
+    }
+    .asideEU aside {
+        padding-bottom: unset;
+        padding-left: 40px;
+        float: left;
+    }
+    #notDisplay {
+        display: none;
+    }
+    #display {
+        display: unset;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .table2011, .table2012, .table2013 {
+        display: none;
+    }
+    .articleEU p {
+        width: 100%;
+        float: unset;
+
+        padding: 0 0 0 10px;
+        max-width: 100%;
+    }
+    .tableEU {
+        width: 100%;
+    }
+    .contactForm {
+        width: 50%
+    }
+    .contactInfo p {
+        width: 80%;
+        max-width: 100%;
+        padding-right: 80px;
+    }
+    #notDisplay {
+        display: unset;
+    }
+    #notDisplayTwo {
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        display: none;
+        background-color: white;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+    }
+    .menu li {
+        float: unset;
+        width: unset;
+    }
+    #toggle:checked + .menu {
+        display: block;
+        position: relative;
+    }
+    .nav {
+        height: unset;
+    }
+    .imageArticle {
+        margin-left: 30px;
+    }
+    section .figure {
+        width: 50%;
+        padding-bottom: 5px;
+        float: unset;
+    }
+    section article p {
+        max-width: 100%;
+        width: 90%;
+        vertical-align: middle;
+    }
+    section aside p {
+        max-width: 100%;
+        width: 70%;
+    }
+    section .figure figcaption {
+        display: none;
+    }
+    .articleFour {
+        order: 0;
+        width: 100%;
+        max-width: 90%;
+        padding-left: 30px;
+        flex-grow: 1;
+        flex-shrink: 2;
+    }
+    .video {
+       display: none;
+    }
+    .sectionNormal {
+        order: 1;
+        padding-left: 30px;
+    }
+    .articleThree {
+        order: 0;
+    }
+    .articleTwo {
+        order: 1;
+    }
+    .articleOne {
+        order: 2;
+    }
+    .sectionArticle {
+
+        grid-template-areas:
+        "Five Five Five Five"
+        "Five Five Five Five"
+        "Five Five Five Five"
+        "Three Three Three Three"
+        "Three Three Three Three"
+        "Three Three Three Three"
+        "Two Two Two Two"
+        "Two Two Two Two"
+        "Two Two Two Two"
+        "One One One One"
+        "One One One One"
+        "One One One One";
+    }
+    .articleSixSolar {
+        display: none;
+    }
+    .asideContact {
+        padding-left: 40px;
+    }
+    .articleAsideOne {
+        grid-column: 1 / 4;
+        grid-row: 1;
+    }
+    .articleAsideTwo {
+        grid-column: 1 / 4;
+        grid-row: 2;
+    }
+    .articleAsideThree {
+        grid-column: 1 / 4;
+        grid-row: 3;
+    }
+    .tableEU {
+        width: 100%;
+        padding-right: 10px;
+    }
+    .articleEU p {
+        width: 100%
+    }
+    .asideEU aside {
+        float: unset;
+        padding-left: unset;
+    }
+    .asideEU {
+        padding-left: 40px;
+    }
+    .table2014, .table2015 {
+        display: none;
+    }
+    #notDisplay {
+        display: unset;
+    }
+    #notDisplayTwo {
+        display: unset;
+    }
+    .contactForm {
+        width: 100%
+    }
+    .contactInfo p {
+        width: 90%;
+        max-width: 100%;
+        padding-right: 15px;
+    }
+
+}
+
+
